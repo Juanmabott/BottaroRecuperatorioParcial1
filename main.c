@@ -17,25 +17,28 @@ typedef struct
     int muertos;
 }ePais;
 
+void actualizarRecuperados(ePais pais,int recuperadosDia)
+{
+    pais.recuperados+=recuperadosDia;
+}
 
 
-
-int ordenarVacunas(eVacuna vec[], int tam)
+int ordenarCaracteres(char vec[], int tam)
 {
   int todoOk=0;
-  eVacuna Aux;
+  char Aux;
 
 if(vec != NULL && tam>0)
 {
 for(int i=0; i < tam-1; i++)
     {
-        for (int j= i+l; j < tam; j++) { if( (vec[i].tipo > vec[j].tipo) ||
-(vec[i].tipo == vec[j].tipo && vec[i].efectividad > vec[j].efectividad)
-{
-   aux = vec[i];
-    vec[i] = vec[j];
-    vec[j] = aux;
-}
+        for (int j= i+l; j < tam; j++) {
+                if(vec)
+            {
+                aux = vec[i];
+                vec[i] = vec[j];
+                vec[j] = aux;
+            }
         }
     }
 todook = 1;
