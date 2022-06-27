@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void invierte(char cadena[], char cadinvertida[]);
+void inviertirCadena(char cadena[], char cadinvertida[]);
 void actualizarRecuperados(ePais pais,int recuperadosDia);
+int ordenarCaracteres(char vec[], int tam);
 int main()
 {
+    char cadena[10]="algoritmo";
+
     char cad[10] = "UTN-FRA";
     char cadinvertida[10];
 
@@ -15,7 +18,7 @@ int main()
     return 0;
 }
 
-void invierte(char cadena[], char cadinvertida[])
+void inviertirCadena(char cadena[], char cadinvertida[])
 {
     int longitud;
     int j;
@@ -50,23 +53,18 @@ void actualizarRecuperados(ePais pais,int recuperadosDia)
 
 int ordenarCaracteres(char vec[], int tam)
 {
-  int todoOk=0;
-  char Aux;
-
-if(vec != NULL && tam>0)
-{
-for(int i=0; i < tam-1; i++)
-    {
-        for (int j= i+l; j < tam; j++) {
-                if(vec)
-            {
-                aux = vec[i];
-                vec[i] = vec[j];
-                vec[j] = aux;
-            }
-        }
-    }
-todook = 1;
-}
-return todook;
+   for(int i = 0; i < tamanio;i++)
+	{
+		for(int j = 0; j < tamanio; j++)
+		{
+			if(cadena[i] > vocales[j])
+			{
+				aux = cadena[i];
+				cadena[i] = cadena[j];
+				cadena[j] = aux;
+			}
+		}
+	}
+    puts(cadena);
+	return contador;
 }
